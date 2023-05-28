@@ -1,0 +1,40 @@
+3arf
+ int fc(int a,int b);
+end3arf
+
+
+int fc(int a,int b)
+{
+ 3arf
+  int r0,r1,s0,s1,t0,t1,qi,ri,si,ti;
+ end3arf
+
+ begin
+  r0 = a;
+  r1 = b;
+  s0 = 1;
+  s1 = 0;
+  t0 = 0;
+  t1 = 1;
+
+  madem(r1 != 0) do
+   qi = r0/r1;
+   ri = r0 - (qi*r1);
+   si = s0 - (qi*s1);
+   ti = t0 - (qi*t1);
+   r0 = r1;
+   r1 = ri;
+   s0 = s1;
+   s1 = si;
+   t0 = t1;
+   t1 = ti;
+  endmadem;
+
+  ekteb(r0);
+  ekteb(s0);
+  ekteb(t0);
+  raj3 0;
+
+ end
+}
+
